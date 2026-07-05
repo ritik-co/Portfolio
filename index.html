@@ -3,21 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ritik Kumar — Full-Stack Developer | AI & Automation Enthusiast</title>
-  <meta name="description" content="Portfolio of Ritik Kumar — MCA student and full-stack developer skilled in Python, AI agents, automation, and modern web technologies." />
+  <title>Ritik Kumar — Full-Stack Developer & Systems Builder</title>
+  <meta name="description" content="Portfolio of Ritik Kumar — MCA student and developer specializing in React, Node.js, Gemini Live API, and backend integrations." />
   <meta name="author" content="Ritik Kumar" />
   <meta property="og:title" content="Ritik Kumar — Full-Stack Developer" />
-  <meta property="og:description" content="Full-stack developer and MCA student exploring AI agents, automation, and building real-world web applications." />
+  <meta property="og:description" content="Full-stack developer exploring Gemini Live, AI agents, IoT, and building high-performance web applications." />
   <meta property="og:type" content="website" />
-  <meta name="theme-color" content="#050508" />
-
-  <!-- Favicon -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+  <meta name="theme-color" content="#0c0c0e" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
   <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
@@ -28,14 +25,16 @@
   <nav class="navbar" id="navbar">
     <div class="container">
       <a href="#" class="nav-logo">
-        Ritik Kumar<span class="logo-dot"></span>
+        Ritik Kumar
       </a>
 
       <ul class="nav-links" id="nav-links">
-        <li><a href="#about">About</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About me</a></li>
+        <li><a href="#projects">Portfolio</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li class="nav-cta-link"><a href="#contact" class="nav-cta-btn">Let's Talk</a></li>
+        <li class="nav-cta-link"><a href="#contact" class="nav-cta-btn">Contact</a></li>
       </ul>
 
       <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
@@ -45,364 +44,431 @@
     <div class="nav-overlay" id="nav-overlay"></div>
   </nav>
 
-
   <!-- ============ HERO ============ -->
   <section class="hero" id="hero">
-    <canvas id="particle-canvas"></canvas>
+    <div class="container hero-container grid-two-cols">
+      <!-- Left Column: Introduction & Statistics -->
+      <div class="hero-left-side reveal">
+        <p class="hero-greeting-sub">Hi, I'm a</p>
+        <h1 class="hero-main-title">
+          Full-Stack Developer
+        </h1>
 
-    <div class="hero-content">
-      <div class="hero-badge">
-        <span class="pulse">
-          <span class="pulse-dot"></span>
-          <span class="pulse-ring"></span>
-        </span>
-        Open to opportunities
+        <!-- Social Icons Row -->
+        <div class="hero-social-row">
+          <a href="https://github.com/ritik-co" target="_blank" rel="noopener noreferrer" class="social-circ-btn" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="social-svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/ritik-kumar-in/" target="_blank" rel="noopener noreferrer" class="social-circ-btn" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="social-svg"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a href="mailto:ritik724995@gmail.com" class="social-circ-btn" aria-label="Email">
+            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="social-svg" style="padding:1px"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+
+        <!-- Actions -->
+        <div class="hero-actions-row">
+          <a href="#projects" class="btn-hero-orange">Explore Portfolio</a>
+          <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-hero-outline">Download CV</a>
+        </div>
+
+        <!-- Horizontal Stats Panel -->
+        <div class="hero-horizontal-stats">
+          <div class="horizontal-stat-box">
+            <span class="h-stat-num">MCA Completed</span>
+            <span class="h-stat-lbl">Awaiting Viva & Result</span>
+          </div>
+          <div class="horizontal-stat-box">
+            <span class="h-stat-num">6+</span>
+            <span class="h-stat-lbl">Projects completed</span>
+          </div>
+          <div class="horizontal-stat-box border-none">
+            <span class="h-stat-num">Real-Time</span>
+            <span class="h-stat-lbl">AI Integration Focus</span>
+          </div>
+        </div>
       </div>
 
-      <p class="hero-greeting">Hello, my name is</p>
-
-      <h1 class="hero-title">
-        <span class="gradient-text">Ritik Kumar.</span>
-      </h1>
-
-      <p class="hero-typewriter">
-        I build things as a <span class="typewriter-text"></span><span class="typewriter-cursor"></span>
-      </p>
-
-      <div class="hero-actions">
-        <a href="#projects" class="btn-primary">
-          View Projects
-          <svg class="btn-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
-        </a>
-        <a href="https://github.com/ritik-co" target="_blank" rel="noopener noreferrer" class="btn-secondary">
-          <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" style="width:18px;height:18px"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-          GitHub
-        </a>
+      <!-- Right Column: Circular Portrait -->
+      <div class="hero-right-side reveal reveal-delay-2">
+        <div class="hero-portrait-circle-wrapper">
+          <div class="portrait-background-circle"></div>
+          <div class="hero-portrait-circle">
+            <img src="ritik.jpg" alt="Ritik Kumar" />
+          </div>
+        </div>
       </div>
-    </div>
-
-    <div class="hero-scroll">
-      <div class="scroll-mouse"></div>
-      <span>Scroll</span>
     </div>
   </section>
 
-
-  <!-- ============ ABOUT ============ -->
-  <section class="section" id="about">
+  <!-- ============ SERVICES ============ -->
+  <section class="section" id="services">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-label">About</span>
-        <h2 class="section-title">A bit about me</h2>
-        <p class="section-subtitle">Passionate about building full-stack applications and exploring AI & automation.</p>
+        <span class="section-label">Capabilities</span>
+        <h2 class="section-title">What I Do</h2>
+        <p class="section-subtitle">Delivering high-end web applications, backend architectures, and AI integrations.</p>
       </div>
 
-      <div class="bento-grid">
-        <!-- Photo & Intro -->
-        <div class="bento-card bento-span-2 bento-photo-card reveal">
-          <div class="bento-photo">
-            <img src="ritik.jpg" alt="Ritik Kumar — Portrait photo" loading="lazy" />
-          </div>
-          <div class="bento-intro">
-            <h3>Ritik Kumar</h3>
-            <p class="bento-role">Full-Stack Developer · AI Enthusiast</p>
-          </div>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <h3>Web Development</h3>
+          <p>Building responsive, pixel-perfect frontend stores and single-page apps using React, Vite, Tailwind CSS, and custom styling systems.</p>
         </div>
 
-        <!-- Bio -->
-        <div class="bento-card bento-span-2 bento-bio reveal reveal-delay-1">
-          <p class="about-text">
-            I'm an MCA student and aspiring full-stack developer with a passion for
-            building web applications that solve real-world problems. From e-commerce
-            platforms to printing management systems, I love turning ideas into working
-            products. Currently diving deep into Python, AI agents, and automation to
-            build smarter, more efficient solutions.
-          </p>
+        <div class="service-card reveal reveal-delay-1">
+          <h3>AI Implementations</h3>
+          <p>Connecting voice-to-voice bidirectional audio loops, raw PCM socket pipelines, and live visual feeds using the Gemini Live API.</p>
         </div>
 
-        <!-- Highlights -->
-        <div class="bento-card bento-highlight reveal reveal-delay-2">
-          <div class="highlight-icon">📍</div>
-          <div class="highlight-info">
-            <span class="highlight-label">Location</span>
-            <span class="highlight-value">India</span>
-          </div>
-        </div>
-        
-        <div class="bento-card bento-highlight reveal reveal-delay-2">
-          <div class="highlight-icon">🎓</div>
-          <div class="highlight-info">
-            <span class="highlight-label">Education</span>
-            <span class="highlight-value">MCA Student</span>
-          </div>
-        </div>
-        
-        <div class="bento-card bento-highlight reveal reveal-delay-3">
-          <div class="highlight-icon">🤖</div>
-          <div class="highlight-info">
-            <span class="highlight-label">Focus</span>
-            <span class="highlight-value">AI & Automation</span>
-          </div>
-        </div>
-        
-        <div class="bento-card bento-highlight reveal reveal-delay-3">
-          <div class="highlight-icon">🚀</div>
-          <div class="highlight-info">
-            <span class="highlight-label">Status</span>
-            <span class="highlight-value">Open to Work</span>
-          </div>
+        <div class="service-card reveal reveal-delay-2">
+          <h3>Backend Architecture</h3>
+          <p>Structuring modular Node.js/Express APIs, secure JWT authorization protocols, SQLite native drivers, and MongoDB databases.</p>
         </div>
 
-        <!-- Action Card -->
-        <div class="bento-card bento-span-4 bento-actions reveal reveal-delay-4">
-          <div class="about-actions" style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
-            <a href="mailto:ritik724995@gmail.com" class="btn-primary">
-              Get in Touch
-              <svg class="btn-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
-            </a>
-            <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-secondary" title="Download Resume">
-              <svg class="btn-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="margin-right: 6px;"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>
-              Resume
-            </a>
-          </div>
+        <div class="service-card reveal reveal-delay-3">
+          <h3>IoT & Hardware</h3>
+          <p>Integrating hardware controllers, Raspberry Pi nodes, automated webhooks, and secure UPI payment systems for physical devices.</p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- ============ ABOUT ME ============ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-flex-layout reveal">
+        <div class="about-text-side">
+          <span class="section-label">Biography</span>
+          <h2 class="section-title">About Me</h2>
+          <p class="about-paragraph">
+            I am a Master of Computer Applications (MCA) student with a passion for constructing full-stack systems and exploring automation. From developing IoT cloud printing hardware models to writing web applications, I focus on building reliable, clean, and functional products.
+          </p>
+          <p class="about-paragraph">
+            Currently, I am working with the Google GenAI SDK, WebSockets, and real-time streaming architectures to create natural voice interfaces and autonomous browser automation solutions.
+          </p>
+
+          <div class="about-action-row">
+            <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-hero-orange sm-btn">Download Resume</a>
+            <a href="mailto:ritik724995@gmail.com" class="btn-hero-outline sm-btn">Email Me</a>
+          </div>
+        </div>
+
+        <!-- Details Card -->
+        <div class="about-details-card">
+          <h4>Technical Credentials</h4>
+          <ul class="details-list">
+            <li><strong>Degree:</strong> MCA Completed (Awaiting Result)</li>
+            <li><strong>Location:</strong> Haridwar, India</li>
+            <li><strong>Focus:</strong> AI Agents, APIs, & Full-Stack Systems</li>
+            <li><strong>Status:</strong> Open to Work / Collaborations</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS (PORTFOLIO) ============ -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Portfolio</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Real-world applications and architectures built from scratch.</p>
+      </div>
+
+      <div class="projects-grid">
+        
+        <!-- PROJECT 1: Risha Voice Assistant -->
+        <div class="project-grid-card reveal">
+          <div class="project-gallery">
+            <div class="grid-card-image-bezel">
+              <img src="risha.png" alt="Risha — Real-Time Voice AI Assistant" loading="lazy" />
+            </div>
+          </div>
+          <div class="grid-card-body">
+            <div class="grid-card-meta">
+              <span class="project-category-text">AI Systems</span>
+              <span class="project-year">2026</span>
+            </div>
+            <h4>Risha — Real-Time Voice AI Assistant</h4>
+            <p>Inspired by Friday/Jarvis, Risha is a multimodal voice and vision assistant. Using WebSockets to stream raw binary PCM (Int16) audio, it coordinates conversational loops via the Gemini Live API. Features camera visual context feeds and a Manifest V3 companion Chrome Extension that executes clicks on web elements using custom DOM tools.</p>
+            <div class="tech-tag-grid small-gap">
+              <span class="tech-tag">Gemini Live API</span>
+              <span class="tech-tag">WebSockets</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Web Audio API</span>
+              <span class="tech-tag">Chrome Extension MV3</span>
+            </div>
+            <a href="https://github.com/ritik-co" target="_blank" rel="noopener noreferrer" class="grid-card-link">
+              View Repository 
+              <svg class="link-arrow" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- PROJECT 2: Getit E-Commerce -->
+        <div class="project-grid-card reveal">
+          <div class="project-gallery">
+            <div class="grid-card-image-bezel">
+              <img src="getit1.png" class="gallery-main-img" id="getit-main" alt="Getit — Storefront" loading="lazy" />
+            </div>
+            <div class="gallery-thumbnails pad-x">
+              <div class="thumb-card active" onclick="changeGalleryImage('getit-main', 'getit1.png', this)">
+                <img src="getit1.png" alt="Storefront View" />
+              </div>
+              <div class="thumb-card" onclick="changeGalleryImage('getit-main', 'getit2.png', this)">
+                <img src="getit2.png" alt="Admin View 1" />
+              </div>
+              <div class="thumb-card" onclick="changeGalleryImage('getit-main', 'getit3.png', this)">
+                <img src="getit3.png" alt="Admin View 2" />
+              </div>
+            </div>
+          </div>
+          <div class="grid-card-body">
+            <div class="grid-card-meta">
+              <span class="project-category-text">Full-Stack Platform</span>
+              <span class="project-year">2026</span>
+            </div>
+            <h4>Getit — Full-Stack E-Commerce Platform</h4>
+            <p>A modern, production-grade e-commerce application. Combines a custom glassmorphism storefront with a complete inventory & orders admin dashboard. Employs JWT-based RBAC authentication, Razorpay payments, custom uploads with Cloudinary, and automated email alerts.</p>
+            <div class="tech-tag-grid small-gap">
+              <span class="tech-tag">React (Vite)</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Express.js</span>
+              <span class="tech-tag">SQLite</span>
+              <span class="tech-tag">Razorpay</span>
+              <span class="tech-tag">Cloudinary</span>
+            </div>
+            <a href="https://github.com/ritik-co" target="_blank" rel="noopener noreferrer" class="grid-card-link">
+              View Repository 
+              <svg class="link-arrow" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- PROJECT 3: GramSetu AI -->
+        <div class="project-grid-card reveal">
+          <div class="project-gallery">
+            <div class="grid-card-image-bezel">
+              <img src="gramsetu5.jpg" class="gallery-main-img" id="gramsetu-main" alt="GramSetu AI" loading="lazy" />
+            </div>
+            <div class="gallery-thumbnails pad-x">
+              <div class="thumb-card active" onclick="changeGalleryImage('gramsetu-main', 'gramsetu5.jpg', this)">
+                <img src="gramsetu5.jpg" alt="Mandi Prices" />
+              </div>
+              <div class="thumb-card" onclick="changeGalleryImage('gramsetu-main', 'gramsetu1.jpg', this)">
+                <img src="gramsetu1.jpg" alt="Crop recommendation" />
+              </div>
+              <div class="thumb-card" onclick="changeGalleryImage('gramsetu-main', 'gramsetu2.jpg', this)">
+                <img src="gramsetu2.jpg" alt="Soil analysis" />
+              </div>
+              <div class="thumb-card" onclick="changeGalleryImage('gramsetu-main', 'gramsetu3.jpg', this)">
+                <img src="gramsetu3.jpg" alt="Translation widget" />
+              </div>
+            </div>
+          </div>
+          <div class="grid-card-body">
+            <div class="grid-card-meta">
+              <span class="project-category-text">Agricultural Web App</span>
+              <span class="project-year">2026</span>
+            </div>
+            <h4>GramSetu AI</h4>
+            <p>A multi-tier agricultural assistant featuring Mandi market prices, automatic IP-based geolocation, crop disease camera inspections, and translation setups.</p>
+            <div class="tech-tag-grid small-gap">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Gemini API</span>
+            </div>
+            <a href="https://github.com/ritik-co" target="_blank" rel="noopener noreferrer" class="grid-card-link">
+              View Repository 
+              <svg class="link-arrow" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- PROJECT 4: HyperPrint -->
+        <div class="project-grid-card reveal">
+          <div class="project-gallery">
+            <div class="grid-card-image-bezel">
+              <img src="hyperprint5.png" class="gallery-main-img" id="hyperprint-main" alt="HyperPrint — IoT Printing System" loading="lazy" />
+            </div>
+            <div class="gallery-thumbnails pad-x">
+              <div class="thumb-card active" onclick="changeGalleryImage('hyperprint-main', 'hyperprint5.png', this)">
+                <img src="hyperprint5.png" alt="Hardware Terminal" />
+              </div>
+              <div class="thumb-card" onclick="changeGalleryImage('hyperprint-main', 'hyperprint1.png', this)">
+                <img src="hyperprint1.png" alt="Admin Dashboard" />
+              </div>
+              <div class="thumb-card" onclick="changeGalleryImage('hyperprint-main', 'hyperprint3.png', this)">
+                <img src="hyperprint3.png" alt="Upload Portal" />
+              </div>
+              <div class="thumb-card" onclick="changeGalleryImage('hyperprint-main', 'hyperprint7.png', this)">
+                <img src="hyperprint7.png" alt="Settings Panel" />
+              </div>
+            </div>
+          </div>
+          <div class="grid-card-body">
+            <div class="grid-card-meta">
+              <span class="project-category-text">MCA College Project — IoT & Hardware</span>
+              <span class="project-year">2026</span>
+            </div>
+            <h4>HyperPrint — IoT Printing System</h4>
+            <p>Built as a major MCA college project. An integrated hardware/software solution linking physical printer hardware with a Raspberry Pi server. Users upload documents securely, complete a UPI webhook payment, and dynamically trigger release triggers on-device.</p>
+            <div class="tech-tag-grid small-gap">
+              <span class="tech-tag">Raspberry Pi</span>
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">UPI Webhooks</span>
+              <span class="tech-tag">SQLite</span>
+            </div>
+            <a href="https://github.com/ritik-co/Printing_project" target="_blank" rel="noopener noreferrer" class="grid-card-link">
+              View Repository 
+              <svg class="link-arrow" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+        <!-- SMALLER FRONTEND & WEB PROJECTS ACCORDION / BOX -->
+        <div class="secondary-projects-section reveal">
+          <div class="secondary-header">
+            <h4>Legacy Codebases & Clones</h4>
+          </div>
+          <div class="secondary-grid">
+            
+            <div class="secondary-card">
+              <div class="sec-card-top">
+                <span class="folder-icon">📂</span>
+                <a href="https://github.com/ritik-co/Food-website" target="_blank" rel="noopener noreferrer" class="sec-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="git-icon"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+                </a>
+              </div>
+              <h5>Food Discovery Website</h5>
+              <p>Responsive culinary portfolio website, featuring clean recipes views and fluid dynamic CSS layout transitions.</p>
+              <div class="sec-tags"><span>HTML5</span><span>CSS3</span><span>Vanilla JS</span></div>
+            </div>
+
+            <div class="secondary-card">
+              <div class="sec-card-top">
+                <span class="folder-icon">📂</span>
+                <a href="https://github.com/ritik-co/amazon-clone" target="_blank" rel="noopener noreferrer" class="sec-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="git-icon"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+                </a>
+              </div>
+              <h5>Amazon Frontend Replica</h5>
+              <p>Detailed clone replicating Amazon's static landing page, layouts, and desktop responsiveness specs.</p>
+              <div class="sec-tags"><span>HTML5</span><span>CSS3 Flexbox</span></div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
 
   <!-- ============ SKILLS ============ -->
   <section class="section" id="skills">
     <div class="container">
       <div class="section-header reveal">
         <span class="section-label">Skills</span>
-        <h2 class="section-title">Technologies I work with</h2>
-        <p class="section-subtitle">From full-stack web development to AI and automation.</p>
+        <h2 class="section-title">Technical Expertise</h2>
+        <p class="section-subtitle">A list of languages, databases, libraries, and frameworks I use.</p>
       </div>
 
-      <div class="skills-grid">
-        <div class="skill-card bento-card reveal reveal-delay-1">
-          <span class="skill-emoji">🔷</span>
-          <span class="skill-name">C</span>
-        </div>
-
-        <div class="skill-card bento-card reveal reveal-delay-1">
-          <span class="skill-emoji">⚡</span>
-          <span class="skill-name">C++</span>
-        </div>
-
-        <div class="skill-card reveal reveal-delay-2">
-          <span class="skill-emoji">🌐</span>
-          <span class="skill-name">HTML5</span>
-        </div>
-
-        <div class="skill-card reveal reveal-delay-2">
-          <span class="skill-emoji">🎨</span>
-          <span class="skill-name">CSS3</span>
-        </div>
-
-        <div class="skill-card reveal reveal-delay-3">
-          <span class="skill-emoji">✨</span>
-          <span class="skill-name">JavaScript</span>
-        </div>
-
-        <div class="skill-card reveal reveal-delay-3">
-          <span class="skill-emoji">🐘</span>
-          <span class="skill-name">PHP</span>
-        </div>
-
-        <div class="skill-card reveal reveal-delay-4">
-          <span class="skill-emoji">🗃️</span>
-          <span class="skill-name">SQL</span>
-        </div>
-
-        <div class="skill-card reveal reveal-delay-4">
-          <span class="skill-emoji">🅱️</span>
-          <span class="skill-name">Bootstrap</span>
-        </div>
-
-        <div class="skill-card reveal reveal-delay-5">
-          <span class="skill-emoji">🚂</span>
-          <span class="skill-name">Express.js</span>
-        </div>
-
-        <div class="skill-card reveal reveal-delay-5">
-          <span class="skill-emoji">🐙</span>
-          <span class="skill-name">GitHub</span>
-        </div>
-
-        <div class="skill-card reveal reveal-delay-1">
-          <span class="skill-emoji">🐍</span>
-          <span class="skill-name">Python</span>
-        </div>
-
-        <div class="skill-card reveal reveal-delay-2">
-          <span class="skill-emoji">🤖</span>
-          <span class="skill-name">AI Agents</span>
-        </div>
-
-        <div class="skill-card reveal reveal-delay-3">
-          <span class="skill-emoji">⚙️</span>
-          <span class="skill-name">Automation</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ============ PROJECTS ============ -->
-  <section class="section" id="projects">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">Projects</span>
-        <h2 class="section-title">Featured work</h2>
-        <p class="section-subtitle">Real-world projects I've designed and built from scratch.</p>
-      </div>
-
-      <div class="projects-grid">
-
-        <!-- FEATURED: Smart Cloud Printing System -->
-        <div class="project-card featured reveal">
-          <div class="project-image">
-            <img src="print.png" alt="Smart Cloud Printing System — IoT Print Management" loading="lazy" />
-            <div class="project-overlay"></div>
+      <div class="skills-category-grid">
+        
+        <!-- Category 1 -->
+        <div class="skill-category-card reveal">
+          <div class="category-header">
+            <h4>Languages & Runtimes</h4>
           </div>
-          <div class="project-body">
-            <span class="project-featured-label">
-              <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              Featured Project
-            </span>
-            <h3>Smart Cloud Printing System</h3>
-            <p>An IoT-based printing solution connecting a Raspberry Pi with printers. Users can upload files from anywhere, authenticate at the machine, pay securely via UPI, and instantly receive their printouts.</p>
-            <div class="project-tags">
-              <span class="tag">IoT</span>
-              <span class="tag">Raspberry Pi</span>
-              <span class="tag">PHP</span>
-              <span class="tag">UPI</span>
-            </div>
-            <a href="https://github.com/ritik-co/Printing_project" target="_blank" rel="noopener noreferrer" class="project-link">
-              View on GitHub
-              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
-            </a>
-          </div>
+          <ul class="cat-list">
+            <li>JavaScript (Node.js)</li>
+            <li>Python</li>
+            <li>C++</li>
+            <li>PHP</li>
+            <li>C Language</li>
+          </ul>
         </div>
 
-        <!-- E-Commerce Website -->
-        <div class="project-card reveal reveal-delay-2">
-          <div class="project-image">
-            <img src="e-Commers.png" alt="E-Commerce Website — Online shopping platform" loading="lazy" />
-            <div class="project-overlay"></div>
+        <!-- Category 2 -->
+        <div class="skill-category-card reveal reveal-delay-1">
+          <div class="category-header">
+            <h4>Backend & Database</h4>
           </div>
-          <div class="project-body">
-            <h3>E-Commerce Website</h3>
-            <p>Fully deployable e-commerce platform built with Node.js and modern technologies. Features secure checkout, product management, and a scalable backend.</p>
-            <div class="project-tags">
-              <span class="tag">Node.js</span>
-              <span class="tag">Express</span>
-              <span class="tag">Full-Stack</span>
-              <span class="tag">Modern Tech</span>
-            </div>
-            <a href="https://github.com/ritik-co/E-commers-web" target="_blank" rel="noopener noreferrer" class="project-link">
-              View on GitHub
-              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
-            </a>
-          </div>
+          <ul class="cat-list">
+            <li>Express.js (REST APIs)</li>
+            <li>WebSockets</li>
+            <li>MongoDB (Mongoose)</li>
+            <li>SQLite</li>
+            <li>Relational SQL</li>
+          </ul>
         </div>
 
-        <!-- Food Website -->
-        <div class="project-card reveal reveal-delay-1">
-          <div class="project-image">
-            <img src="FOOD.png" alt="Food Website — Recipe discovery platform" loading="lazy" />
-            <div class="project-overlay"></div>
+        <!-- Category 3 -->
+        <div class="skill-category-card reveal reveal-delay-2">
+          <div class="category-header">
+            <h4>Frontend Systems</h4>
           </div>
-          <div class="project-body">
-            <h3>Food Website</h3>
-            <p>Explore delicious recipes and food items in a beautiful, responsive user interface.</p>
-            <div class="project-tags">
-              <span class="tag">HTML</span>
-              <span class="tag">CSS</span>
-              <span class="tag">JavaScript</span>
-            </div>
-            <a href="https://github.com/ritik-co/Food-website" target="_blank" rel="noopener noreferrer" class="project-link">
-              View on GitHub
-              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
-            </a>
-          </div>
+          <ul class="cat-list">
+            <li>React.js (Vite Tooling)</li>
+            <li>CSS3 / HTML5</li>
+            <li>Tailwind CSS</li>
+            <li>Bootstrap</li>
+          </ul>
         </div>
 
-        <!-- Amazon Clone -->
-        <div class="project-card reveal reveal-delay-2">
-          <div class="project-image">
-            <img src="amazon.png" alt="Amazon Clone — Frontend replica" loading="lazy" />
-            <div class="project-overlay"></div>
+        <!-- Category 4 -->
+        <div class="skill-category-card reveal reveal-delay-3">
+          <div class="category-header">
+            <h4>AI & Systems Tools</h4>
           </div>
-          <div class="project-body">
-            <h3>Amazon Clone</h3>
-            <p>Pixel-perfect frontend clone of Amazon with responsive layout and navigation.</p>
-            <div class="project-tags">
-              <span class="tag">HTML</span>
-              <span class="tag">CSS</span>
-            </div>
-            <a href="https://github.com/ritik-co/amazon-clone" target="_blank" rel="noopener noreferrer" class="project-link">
-              View on GitHub
-              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
-            </a>
-          </div>
+          <ul class="cat-list">
+            <li>Gemini Live APIs</li>
+            <li>Google GenAI SDK</li>
+            <li>Chrome Extension MV3</li>
+            <li>Raspberry Pi</li>
+            <li>Git & GitHub</li>
+          </ul>
         </div>
 
       </div>
     </div>
   </section>
-
 
   <!-- ============ CONTACT ============ -->
   <section class="section" id="contact">
     <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">Contact</span>
-        <h2 class="section-title">Get in touch</h2>
-        <p class="section-subtitle">Have a project in mind? Let's build something great together.</p>
-      </div>
-
-      <div class="contact-wrapper reveal reveal-delay-1">
-        <p class="contact-text">
-          I'm currently looking for new opportunities. Whether you have a question, 
-          a project idea, or just want to say hello — my inbox is always open 
-          and I'll get back to you as soon as possible.
+      <div class="contact-card reveal">
+        <h2 class="contact-title">Let's build something together</h2>
+        <p class="contact-desc">
+          I am currently open to full-time opportunities, freelance projects, and collaborations. 
+          If you have an idea or would like to chat about system integrations, drop me an email!
         </p>
-
-        <a href="mailto:ritik724995@gmail.com" class="contact-email">
-          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          ritik724995@gmail.com
-        </a>
-
-        <div class="contact-or"><span>or find me on</span></div>
-
-        <div class="social-links">
-          <a href="https://github.com/ritik-co" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub profile">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-          </a>
-          <a href="https://www.linkedin.com/in/ritik-kumar-in/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn profile">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-          </a>
-          <a href="mailto:ritik724995@gmail.com" class="social-link" aria-label="Send email">
-            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        
+        <div class="contact-action-block">
+          <a href="mailto:ritik724995@gmail.com" class="btn-hero-orange">
+            ritik724995@gmail.com
           </a>
         </div>
       </div>
     </div>
   </section>
-
 
   <!-- ============ FOOTER ============ -->
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
         <div class="footer-left">
-          <p>Designed & built by <span>Ritik Kumar</span> © 2025</p>
+          <p>Designed & Built by <span>Ritik Kumar</span> © 2026</p>
         </div>
         <div class="footer-right">
-          <button class="back-to-top" aria-label="Back to top">
+          <button class="back-to-top" aria-label="Scroll to top">
             <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" /></svg>
           </button>
         </div>
